@@ -38,8 +38,16 @@ const ComputerCanvas = () => {
                     minPolarAngle={Math.PI / 2}
                 />
                 <Computer />
-                <ambientLight intensity={1} />
-                <directionalLight position={[10, 10, 5]} intensity={2} />
+                <hemisphereLight intensity={0.15} groundColor="black" />
+                <pointLight intensity={1} />
+                <spotLight
+                    position={[-20, 50, 10]}
+                    angle={0.12}
+                    penumbra={1}
+                    intensity={1}
+                    castShadow
+                    shadow-mapSize={1024}
+                />
             </Suspense>
             <Preload all />
         </Canvas>
