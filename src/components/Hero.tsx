@@ -5,9 +5,9 @@ import RoomCanvas from "./canvas/RoomCanvas";
 
 const Hero = () => {
     return (
-        <section className="relative w-full h-screen mx-auto">
+        <section className="relative w-full h-screen mx-auto flex flex-col">
             <div
-                className="absolute inset-0 top-[120px] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-row items-start gap-5"
+                className="absolute inset-0 top-[120px] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-row items-start gap-5 z-10 pointer-events-none"
             >
                 <div className="flex flex-col justify-center items-center mt-5">
                     <div className="w-5 h-5 rounded-full bg-[#915eff]" />
@@ -25,7 +25,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="absolute inset-0 w-full h-full z-[-1]">
+            <div className="w-full h-full absolute inset-0 z-0">
                 <RoomCanvas />
             </div>
 
