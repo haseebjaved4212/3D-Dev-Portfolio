@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { slideIn } from "@/utils/motion";
 import { socialLinks } from "@/constants";
 import { Mail, Linkedin, Github, Instagram, Twitter } from "lucide-react";
-import ComputerCanvas from "./canvas/ComputerCanvas";
+import EarthCanvas from "./canvas/EarthCanvas";
 
 const Contact = () => {
     const formRef = useRef<HTMLFormElement>(null);
@@ -114,7 +114,7 @@ const Contact = () => {
                 className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
             >
                 {/* 3D Earth or similar could go here. For now, a placeholder or just empty space with stars */}
-                <ComputerCanvas />
+                <EarthCanvas />
             </motion.div>
         </section>
     );

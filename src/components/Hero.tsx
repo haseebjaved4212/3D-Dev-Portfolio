@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import RoomCanvas from "./canvas/RoomCanvas";
+import HeroCanvas from "./canvas/HeroCanvas";
 
 const Hero = () => {
     return (
@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
 
             <div className="w-full h-full absolute inset-0 z-0">
-                <RoomCanvas />
+                <HeroCanvas />
             </div>
 
             <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
